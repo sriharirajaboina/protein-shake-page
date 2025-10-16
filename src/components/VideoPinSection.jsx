@@ -37,16 +37,16 @@ const VideoPinSection=()=>{
                 "clipPath(6% at 50% 50%",
         }}
             className="size-full video-box">
-                <video src="videos/pin-video.mp4" playsInline muted loop autoPlay
+                <video src="/videos/pin-video.mp4" playsInline muted loop autoPlay
                 className="size-full absolute insert-0 object-cover mt-35"/>
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
                 md:scale-100 scale-200">
-                    <img src="images/circle-text.svg"
+                    <img src="/images/circle-text.svg"
                     className="animate-slowspin"/>
                 </div>
                 <div className="play-btn absolute top-1/2 left-1/2 -translate-x-1/2 
                 -translate-y-1/2 size-[9vw] flex justify-center items-center bg-[#ffffff1a] backdrop-blur-xl rounded-full">
-                    <img src="images/play.svg"
+                    <img src="/images/play.svg"
                     className="size-[3vw] ml-[.5vw]"/>
                 </div>
             </div>

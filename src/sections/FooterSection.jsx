@@ -12,7 +12,7 @@ const FooterSection=()=>{
         <section className="footer-section 2xl:min-h-dvh 
         overflow-hidden relative bg-[#222123]">
             
-            <img src="images/footer-dip.png"
+            <img src="/images/footer-dip.png"
             className="w-full object-cover -translate-y-1"/>
             <div className="2xl:h-[110dvh] relative md:pt-[20vh] pt-[10vh] ">
                 <div className="overflow-hidden z-10">
@@ -23,20 +23,20 @@ const FooterSection=()=>{
                 </div>
                 <div>
                     <video 
-                    src="videos/splash.mp4" autoPlay playInline muted 
+                    src="/videos/splash.mp4" autoPlay playInline muted 
                     className="absolute top-0 object-contain mix-blend-lighten"/>
                     <div className="flex justify-center items-center gap-5 relative z-10 md:mt-20 mt-5">
                         <div className="social-btn border border-[#faeade33] md:size-[5vw] size-14 md:p-0 p-3 
                         flex justify-center items-center rounded-full hover:bg-[#ffffff1a] transition-colors cursor-pointer">
-                            <img src="images/yt.svg"/>
+                            <img src="/images/yt.svg"/>
                         </div>
                         <div className="social-btn border border-[#faeade33] md:size-[5vw] size-14 md:p-0 p-3 
                         flex justify-center items-center rounded-full hover:bg-[#ffffff1a] transition-colors cursor-pointer">
-                            <img src="images/insta.svg"/>
+                            <img src="/images/insta.svg"/>
                         </div>
                         <div className="social-btn border border-[#faeade33] md:size-[5vw] size-14 md:p-0 p-3 
                         flex justify-center items-center rounded-full hover:bg-[#ffffff1a] transition-colors cursor-pointer">
-                            <img src="images/tiktok.svg"/>
+                            <img src="/images/tiktok.svg"/>
                         </div>
                     </div>
                 </div>
@@ -69,7 +69,7 @@ const FooterSection=()=>{
                             className="w-full placeholder:font-sans placeholder:text-[#999999]
                              2xl:text-4xl text-3xl placeholder:font-bold placeholder:tracking-tighter"
                             />
-                            <img src="images/arrow.svg"/>
+                            <img src="/images/arrow.svg"/>
                         </div>
                         <div className="copyright-box 2xl:absolute w-full md:px-10 px-5 py-7 bottom-0 
                         text-milk opacity-50 md:text-lg font-paragraph flex gap-7 md:flex-row flex-col-reverse 

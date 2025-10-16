@@ -66,14 +66,14 @@ const FlavorSlider =() =>{
                         className={`relative z-3 lg:w-[50vw] w-96 lg:h-[70vh] 
                         md:w-[90vw] md:h-[50vh] h-80 flex-none ${flavor.rotation}`}>
                             <img 
-                             src={`images/${flavor.color}-bg.svg`} 
+                             src={`/images/${flavor.color}-bg.svg`} 
                              className="absolute bottom-0"
                             />
-                            <img src={`images/${flavor.color}-drink.webp`}
+                            <img src={`/images/${flavor.color}-drink.webp`}
                             className="absolute left-1/2 -translate-x-1/2 bottom-0
                             md:h-full h-80 md:bottom-0"
                             />
-                            <img src={`images/${flavor.color}-elements.webp`}
+                            <img src={`/images/${flavor.color}-elements.webp`}
                             className="absolute md:top-0 md:bottom-auto bottom-10 w-full"
                             />
                             <h1 className="absolute md:bottom-10 md:left-10 bottom-5 left-5

@@ -58,10 +58,10 @@ const NutritionSection = () =>{
     return (
         <section className="nutrition-section min-h-[100dvh]
         2xl:h-[120dvh] overflow-hidden relative">
-            <img src="images/slider-dip.png"
+            <img src="/images/slider-dip.png"
             className="w-full"
             />
-            <img src="images/big-img.png"
+            <img src="/images/big-img.png"
             className="big-img w-full absolute 2xl:h-full md:h-2/3 h-1/2 
             left-0 bottom-0 object-bottom 2xl:object-content object-cover"/>
             <div className="flex md:flex-row flex-col justify-between md:px-10
