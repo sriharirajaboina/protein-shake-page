@@ -1,8 +1,18 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { useMediaQuery } from "react-responsive";
 import SplitType from "split-type"
+
+
 const HeroSection = () => {
 
+  const isMobile=useMediaQuery({
+    query:"(max-width:768px)"
+  })
+
+  const isTablet=useMediaQuery({
+    query:"(max-width:1024px)"
+  })
     useGSAP(()=>{
         const titleSplit=new SplitType(".hero-title",{
             type:"chars",
@@ -46,11 +56,28 @@ const HeroSection = () => {
   return (
     <section className="bg-[#232224]">
       <div className="hero-container relative bg-[#faeade] w-screen h-[100dvh] overflow-hidden">
-        <img
-          src="images/static-img.png"
-          alt="static-img"
-          className="absolute left-1/2 top-0 -translate-x-1/2 object-auto scale-100 md:scale-150 z-0"
-        />
+        {isTablet ? (
+          <>
+            {isMobile && (
+              <img
+                src="images/hero-bg.png"
+                className="absolute bottom-40 size-full object-cover"
+              />
+            )}
+            <img
+              src="images/hero-img.png"
+              className="absolute bottom-0 left-1/2 -translate-x-1/2 object-auto"
+            />
+          </>
+        ) : (
+          <video
+            src="videos/hero-bg.mp4"
+            autoPlay
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        )}
         <div className="hero-content opacity-0 relative z-10 w-full h-full flex flex-col 2xl:justify-center items-center translate-y-10 2xl:pt-0 md:pt-32 pt-24">
           <div className="overflow-hidden ">
             <h1 className="hero-title text-[#523122] 2xl:text-[8.5rem] md:text-[6.5rem] 

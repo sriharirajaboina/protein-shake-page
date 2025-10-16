@@ -1,5 +1,6 @@
 import React from "react"
 import FlavorTitle from "../components/FlavorTitle"
+import FlavorSlider from "../components/FlavorSlider"
 const Flavor=()=>{
     return(
         <section className="flavor-section min-h-[100dvh] bg-[#faeade]">
@@ -7,7 +8,11 @@ const Flavor=()=>{
                 <div className="lg:w-[57%] flex-none h-80 lg:h-full md:mt-20 xl:mt-0">
                     <FlavorTitle/>
                 </div>
+                <div className="h-full">
+                    <FlavorSlider/>
+                </div>
             </div>
+            
         </section>
     )
 }

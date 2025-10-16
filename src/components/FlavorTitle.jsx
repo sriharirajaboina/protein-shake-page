@@ -23,11 +23,11 @@ const FlavorTitle =()=>{
 
         gsap.to(".flavor-text-scroll",{
             duration:1,
-             clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-      ease: "circ.inOut",
+            clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+            ease: "circ.inOut",
             scrollTrigger:{
                 trigger:".flavor-section",
-                start:"top 60%"
+                start:"top 10%"
             }
         });
 
@@ -37,7 +37,7 @@ const FlavorTitle =()=>{
             ease:"power1.inOut",
             scrollTrigger:{
                 trigger:".flavor-section",
-                start:"top 1%",
+                start:"top 10%",
             }
         })
     })
@@ -51,7 +51,7 @@ const FlavorTitle =()=>{
             </div>
 
             <div style={{}}
-            className="flovor-text-scroll rotate-[-3deg] md:translate-y-5 border-[.5vw]
+            className="flavor-text-scroll rotate-[-3deg] md:translate-y-5 border-[.5vw]
             border-[#faeade] absolute z-10">
                 <div className="bg-[#a26833] pb-5 2xl:pt-0 py-3 2xl:px-5 px-3">
                     <h2 className="text-[#faeade]">freaking</h2>

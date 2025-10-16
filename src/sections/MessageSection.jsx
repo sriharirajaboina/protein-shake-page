@@ -56,7 +56,7 @@ const MessageSection = () =>{
 
     const paragraphTl=gsap.timeline({
         scrollTrigger:{
-            trigger:".message-conent p",
+            trigger:".message-content p",
             start:"top center",
         }
     })

@@ -5,22 +5,42 @@ import MessageSection from "./sections/MessageSection"
 import FlavorSection from "./sections/FlavorSection"
 import './App.css'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { ScrollSmoother } from 'gsap/all'
 import gsap from 'gsap'
-
-gsap.registerPlugin(ScrollTrigger)
+import { useGSAP } from '@gsap/react'
+import NutritionSection from './sections/NutritionSection'
+import BenefitSection from "./sections/BenefitSection"
+import TestimonialSection from './sections/TestimonialSection'
+import FooterSection from './sections/FooterSection'
+gsap.registerPlugin(ScrollTrigger,ScrollSmoother)
 
 function App() {
-  const [count, setCount] = useState(0)
+   useGSAP(()=>{
+    ScrollSmoother.create({
+      smooth:3,
+      effects:true,
+    })
+   })
 
   return (
     <>
-      <div >
+      <main >
         <NavBar/>
-        <HeroSection/>
-        <MessageSection/>
-        <FlavorSection/>
-        <div className="h-[100dvh] border border-red-500 border-[0.2vw]"></div>
-      </div>
+        <div className="smooth-wrapper">
+          <div id="smooth-content">
+            <HeroSection/>
+            <MessageSection/>
+            <FlavorSection/>
+            <NutritionSection/>
+            <div>
+              <BenefitSection/>
+              <TestimonialSection/>
+            </div>
+            <FooterSection/>
+          </div>
+        </div>
+        
+      </main>
       
     </>
   )

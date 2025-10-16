@@ -37,7 +37,10 @@ export default {
       width: {
         'size-15vw': '15vw',
         'size-9vw': '9vw'
-      }
+      },
+      animation: {
+        slowspin: 'spin 20s linear infinite',
+      },
     }
   },
   plugins: [],
